@@ -28,6 +28,11 @@ gem 'html2slim'
 
 gem 'font-awesome-rails'
 
+gem 'devise'
+
+gem "haml-rails", "~> 0.9"
+
+gem 'pry-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
