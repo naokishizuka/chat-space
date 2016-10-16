@@ -1,0 +1,42 @@
+.chat-side {
+  width: 300px;
+  height: 100%;
+  background: #2f3e51;
+}
+
+.chat-user {
+  color: #fff;
+  height: 60px;
+  padding: 20px;
+  background: #253141;
+  line-height: 60px;
+
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+  }
+  &__actions {
+    float:right;
+  }
+  &__action {
+    display: inline-block;
+    margin: 5px 10px 0px 5px;
+  }
+}
+
+.chat-group {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  &__name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  &__message {
+    font-size: 11px;
+  }
+  &:hover {
+    background-color: #384a62;
+  }
+}
