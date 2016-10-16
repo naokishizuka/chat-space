@@ -1,28 +1,58 @@
-== README
+# Database Definition
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tables
 
-Things you may want to cover:
+- users
+- groups
+- group_users
+- messages
 
-* Ruby version
+## Columns
 
-* System dependencies
+### users
 
-* Configuration
+- name
+- email
+- password
+- password_confirmation
 
-* Database creation
+etc...
 
-* Database initialization
+### groups
 
-* How to run the test suite
+- name
 
-* Services (job queues, cache servers, search engines, etc.)
+### group_users
 
-* Deployment instructions
+- group_id
+- user_id
 
-* ...
+### messages
 
+- group_id
+- user_id
+- text
+- image
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Association
+
+### users
+
+- has_many :group_users
+- has_many :groups, through: :group_users
+- has_many :messages
+
+### groups
+
+- has_many :users, through: :group_users
+- has_many :messages
+
+### group_users
+
+- belongs_to :user
+- belongs_to :group
+
+### message
+
+- belongs_to :user
+- belongs_to :group
