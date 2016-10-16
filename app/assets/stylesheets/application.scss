@@ -1,6 +1,8 @@
 @import "./reset";
 @import "font-awesome";
 
+@import "./mixin/clearfix";
+
 @import "./modules/chat";
 @import "./modules/chat_side";
 @import "./modules/chat_main";

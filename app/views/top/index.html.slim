@@ -18,18 +18,63 @@
   .chat-main
     .chat-header
       .chat-header--left
-        h2
-        .chat-header__users
-          .chat-header__user
-          .chat-header__user
+        h2 divdivdiv
+        p.chat-header__users
+          | Members:
+          span.chat-header__user
+            | shizuka
+          span.chat-header__user
+            | shizuka
       .chat-header--right
-        .chat-header__edit-btn
+        a.chat-header__edit-btn
+          | edit
     .chat-body
       ul.chat-messages
         li.chat-message
           .chat-message__header
-          p.chat-message_body
+            .chat-message__name
+              | naokishizuka
+            .chat-message__time
+              | 2016/10/02 06:27:30
+          .chat-message__body
+              |お腹いっぱい
+        li.chat-message
+          .chat-message__header
+            .chat-message__name
+              | naokishizuka
+            .chat-message__time
+              | 2016/10/02 06:27:30
+          .chat-message__body
+              |お腹いっぱい
+        li.chat-message
+          .chat-message__header
+            .chat-message__name
+              | naokishizuka
+            .chat-message__time
+              | 2016/10/02 06:27:30
+          .chat-message__body
+              |お腹いっぱい
+        li.chat-message
+          .chat-message__header
+            .chat-message__name
+              | naokishizuka
+            .chat-message__time
+              | 2016/10/02 06:27:30
+          .chat-message__body
+              |お腹いっぱい
+        li.chat-message
+          .chat-message__header
+            .chat-message__name
+              | naokishizuka
+            .chat-message__time
+              | 2016/10/02 06:27:30
+          .chat-message__body
+              |お腹いっぱい
+          
     .chat-footer
       .chat-footer__body
-        textarea
-      input [type="submit"]
+        textarea[placeholder="type a message"]
+        label.chat-footer__file
+          input[type="file"]
+          i.fa.fa-image
+      input[type="submit" value="Send"]
