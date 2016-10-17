@@ -1,0 +1,7 @@
+.chat-group-form
+  h1
+    | チャットグループ編集
+  = form_for @group do |f|
+    = render partial: "form", locals: { f: f }
+
+    

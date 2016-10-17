@@ -3,8 +3,9 @@
     .chat-user
       h5 shizuka
       .chat-user__actions
-        .chat-user__action.fa.fa-pencil-square-o.fa-lg
-        .chat-user__action.fa.fa-cog.fa-lg
+        = link_to "", new_group_path, class: "chat-user__action fa fa-pencil-square-o fa-lg"
+        
+        a.chat-user__action.fa.fa-cog.fa-lg
     .chat-groups
       a.chat-group
         p.chat-group__name

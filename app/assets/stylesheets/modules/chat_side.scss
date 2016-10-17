@@ -21,8 +21,13 @@
     float:right;
   }
   &__action {
+    color: #fff;
+    text-decoration: none;
     display: inline-block;
     margin: 5px 10px 0px 5px;
+    &:visited {
+      color: inherit;
+    }
   }
 }
 
